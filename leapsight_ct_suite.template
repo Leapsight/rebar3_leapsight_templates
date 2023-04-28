@@ -7,7 +7,7 @@
     {app_dir, ".", "The directory where the test subdirectory goes"}
 ]}.
 
-{dir, "{{app_dir}}/test"}, % creates the dir if it doesn't exist
+{dir, "{{app_dir}}/test"}. % creates the dir if it doesn't exist
 
 {template,
     "leapsight_ct_suite.erl",

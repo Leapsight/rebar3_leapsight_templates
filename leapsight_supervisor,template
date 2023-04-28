@@ -7,7 +7,7 @@
     {app_dir, ".", "The directory where the src subdirectory goes"}
 ]}.
 
-{dir, "{{app_dir}}/src"}, % creates the dir if it doesn't exist
+{dir, "{{app_dir}}/src"}. % creates the dir if it doesn't exist
 
 {template,
     "leapsight_supervisor.erl",
