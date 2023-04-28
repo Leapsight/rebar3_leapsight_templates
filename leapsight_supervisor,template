@@ -1,0 +1,15 @@
+{description, "A basic supervisor for an OTP application"}.
+{variables, [
+    {name,
+        "name",
+        "Name of the module."
+    },
+    {app_dir, ".", "The directory where the src subdirectory goes"}
+]}.
+
+{dir, "{{app_dir}}/src"}, % creates the dir if it doesn't exist
+
+{template,
+    "leapsight_supervisor.erl",
+    "{{app_dir}}/src/{{name}}.erl"
+}.

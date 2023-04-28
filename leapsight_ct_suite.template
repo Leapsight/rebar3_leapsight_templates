@@ -1,0 +1,15 @@
+{description, "A basic Common Test suite for an OTP application"}.
+{variables, [
+    {name,
+        "name",
+        "Name of the suite, prepended to the standard _SUITE suffix"
+    },
+    {app_dir, ".", "The directory where the test subdirectory goes"}
+]}.
+
+{dir, "{{app_dir}}/test"}, % creates the dir if it doesn't exist
+
+{template,
+    "leapsight_ct_suite.erl",
+    "{{app_dir}}/test/{{name}}_SUITE.erl"
+}.
